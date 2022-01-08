@@ -1,0 +1,24 @@
+.profile {
+  background-color: $lightgray;
+  h2 {
+    color: $purple;
+  }
+  &__box {
+    height: 300px;
+    width: 100%;
+    display: flex;
+  }
+  &__ava {
+    height: 300px;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+}

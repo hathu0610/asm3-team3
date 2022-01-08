@@ -1,0 +1,48 @@
+.hero {
+  background-color: $purple;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      padding-top: 6rem;
+    }
+  }
+  &__text {
+    color: $White !important;
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 2;
+      text-align: center;
+    }
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__image {
+    min-height: 10rem;
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 1;
+      min-height: 20rem;
+      float: right !important;
+      position: relative;
+      height: auto;
+      margin-left: -55% !important;
+    }
+  }
+  &__image2 {
+    min-height: 10rem;
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 3;
+      min-height: 20rem;
+      float: right !important;
+      position: relative;
+      height: auto;
+      margin-right: -55% !important;
+    }
+  }
+}
