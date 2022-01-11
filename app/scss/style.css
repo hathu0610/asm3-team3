@@ -506,6 +506,7 @@ p {
   width: 25%;
   padding: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 .profile img {
@@ -611,5 +612,16 @@ p {
 
 .prjdes #process {
   background: linear-gradient(321.82deg, #21f2ff, #4181ff 59.22%, #4475ff 98.02%), #7196ff;
+}
+
+.subprofile {
+  background-color: #4053e4;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: white;
+}
+
+.subprofile .material-icons {
+  font-size: 48px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
