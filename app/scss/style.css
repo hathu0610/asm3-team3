@@ -197,6 +197,99 @@ p {
   overflow-x: hidden;
 }
 
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+  /* demo styles */
+}
+
+.feedback h2 {
+  text-align: center;
+  color: #4053e4;
+}
+
+.feedback h3 {
+  margin-bottom: 0px;
+}
+
+.feedback .accordion {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.feedback .active,
+.feedback .accordion:hover {
+  background-color: #4053e4;
+  color: white;
+}
+
+.feedback .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.feedback table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.feedback .tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.feedback .tbl-content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.feedback th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.feedback td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.feedback ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.feedback ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.feedback ::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 .header {
   position: fixed;
   top: 0;

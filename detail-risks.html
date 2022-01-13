@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  <link rel ="stylesheet" href="./app/scss/style.css" >
     <link rel ="stylesheet" href="/app/scss/style.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Assignment 3</title>
 </head>
-<body class="subprofile container container--pall ">
+<body  data-aos="fade-left" class="subprofile container container--pall ">
     <span class="material-icons" onclick="javascript:window.location.href='./' ">arrow_back</span> 
     <h1> Project Description/Risks</h1>
     <p>When creating a project, there can be many risks that can ruin or even slow down the development process. Mitigating risks requires early identification of risks and pre-determining how to deal with the problem. After careful consideration and discussion, our team has identified two main types of risks that can arise when building our project - Botto. 
@@ -18,5 +19,7 @@
     </p>
     <p>Another equally important type of risk is technical risk. This includes risks associated with problems that may arise during project development and launching phases. The first risk that can arise is insufficiency in our data set. To train the chatbot, our team needed to prepare a series of questions that students could ask along with appropriate answers. However, the students’ questions can be endless, and high chances are the students can ask questions about topics that are not in our prepared dataset. Our team may also face the risk of development complexity. Training the model for the chatbot can be complicated, and since this is the first time our team is building a chatbot we might come across some errors that are difficult to debug. After launching the project, our project might face the risk of server scalability. For now, we are planning to host our chatbot on a local server, but when put into real-life usage our project might need to shift our hosting to a cloud server. However, cloud servers can be costly and complex to configure. Finally another risk that our end-user, the students, might face is the security problem. Currently, we do not have any plan yet to improve our site security, and hackers can take advantage of this to steal the RMIT’s students’ data.
     </p>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
