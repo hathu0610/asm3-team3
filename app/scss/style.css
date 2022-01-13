@@ -208,15 +208,6 @@ p {
   /* demo styles */
 }
 
-.feedback h2 {
-  text-align: center;
-  color: #4053e4;
-}
-
-.feedback h3 {
-  margin-bottom: 0px;
-}
-
 .feedback .accordion {
   background-color: white;
   cursor: pointer;
@@ -243,6 +234,15 @@ p {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
+}
+
+.feedback h2 {
+  text-align: right;
+  color: #4053e4;
+}
+
+.feedback h3 {
+  margin-bottom: 0px;
 }
 
 .feedback table {
@@ -288,6 +288,111 @@ p {
 
 .feedback ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.reflect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reflect .accordion {
+  text-align: center;
+}
+
+.reflect h2 {
+  text-align: center;
+  color: #4053e4;
+}
+
+.reflect h3 {
+  margin-bottom: 0px;
+}
+
+.reflect .accordion {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.reflect .material-icons {
+  font-size: 56px;
+  cursor: pointer;
+  color: black;
+}
+
+.reflect .material-icons:hover {
+  background-color: #4053e4;
+  border-radius: 90px;
+  color: white;
+}
+
+.reflect .material-icons:not(:hover) {
+  background-color: none;
+  border-radius: 90px;
+  color: black;
+}
+
+.reflect .active .material-icons {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.reflect .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.reflect .read-more-state {
+  display: none;
+}
+
+.reflect .read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+.reflect .read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.reflect .read-more-state ~ .read-more-trigger:before {
+  content: "Show more";
+}
+
+.reflect .read-more-state:checked ~ .read-more-trigger:before {
+  content: "Show less";
+}
+
+.reflect .read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+}
+
+.reflect .description {
+  text-align: center;
 }
 
 .header {
