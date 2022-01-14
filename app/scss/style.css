@@ -395,6 +395,15 @@ p {
   text-align: center;
 }
 
+.ref {
+  background-color: #4053e4;
+  color: white;
+}
+
+.ref a {
+  color: lightblue;
+}
+
 .header {
   position: fixed;
   top: 0;
