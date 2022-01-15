@@ -734,6 +734,22 @@ p {
   color: #4053e4;
 }
 
+.job_comparison{
+  text-align: left;
+}
+
+div.job_comparison:hover{
+  background-color:gray;    
+  color:white;
+  cursor:pointer;  /* you may delete this if you want */
+}
+
+.job_comparison h2 {
+  color: #4053e4;
+}
+
+
+
 .prjdes {
   background-color: #f6f6f6;
 }
