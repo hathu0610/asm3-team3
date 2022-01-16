@@ -22,4 +22,22 @@
     object-fit: cover;
     margin-bottom: 16px;
   }
+  &__comparision {
+    display: flex;
+    justify-content: center;
+  }
+  &__cta {
+    font-size: $font-sm;
+    color: $White;
+    transition: opacity 300ms ease-in-out;
+    background: #23272a;
+    border: 0;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+  h3 {
+    font-size: $font-med;
+  }
 }

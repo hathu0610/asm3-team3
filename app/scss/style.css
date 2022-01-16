@@ -2,7 +2,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: initial;
+  overflow-x: hidden;
 }
 
 *,
@@ -725,6 +725,32 @@ p {
   margin-bottom: 16px;
 }
 
+.profile__comparision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile__cta {
+  font-size: 0.75rem;
+  color: white;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  background: #23272a;
+  border: 0;
+}
+
+.profile__cta:hover {
+  opacity: 0.75;
+}
+
+.profile h3 {
+  font-size: 1rem;
+}
+
 .tool {
   text-align: right;
 }
@@ -733,22 +759,6 @@ p {
 .tool h2 {
   color: #4053e4;
 }
-
-.job_comparison{
-  text-align: left;
-}
-
-div.job_comparison:hover{
-  background-color:gray;    
-  color:white;
-  cursor:pointer;  /* you may delete this if you want */
-}
-
-.job_comparison h2 {
-  color: #4053e4;
-}
-
-
 
 .prjdes {
   background-color: #f6f6f6;
