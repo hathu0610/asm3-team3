@@ -17,7 +17,7 @@ html {
 }
 
 .float-child {
-  width: 50%;
+  width: 33%;
   float: left;
   padding: 0px;
 }  
