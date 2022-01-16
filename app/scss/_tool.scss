@@ -1,16 +1,18 @@
 .tool {
   text-align: left;
-  &__box {
-    display: flex;
-    flex-direction: row;
-  }
-  img {
-    width: 30%;
-    flex: 2;
-    margin-right: 50px;
-  }
-  &__content {
-    flex: 2;
+  @include breakpoint-up(large) {
+    &__box {
+      display: flex;
+      flex-direction: row;
+    }
+    img {
+      width: 30%;
+      flex: 2;
+      margin-right: 50px;
+    }
+    &__content {
+      flex: 2;
+    }
   }
 }
 .skill,

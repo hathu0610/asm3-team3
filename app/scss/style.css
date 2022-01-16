@@ -455,8 +455,6 @@ p {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#4053e4), to(transparent));
-  background-image: linear-gradient(#4053e4, transparent);
 }
 
 .header nav {
@@ -676,6 +674,7 @@ p {
 
 .hero__image {
   min-height: 10rem;
+  margin-left: -125% !important;
 }
 
 @media (min-width: 64em) {
@@ -723,28 +722,53 @@ p {
 }
 
 .profile__box {
-  height: 300px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 64em) {
+  .profile__box {
+    height: 300px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .profile__ava {
-  height: 300px;
-  width: 25%;
-  padding: 20px;
   text-align: center;
   cursor: pointer;
 }
 
+@media (min-width: 64em) {
+  .profile__ava {
+    height: 300px;
+    width: 25%;
+    padding: 20px;
+  }
+}
+
 .profile img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 16px;
+}
+
+@media (min-width: 64em) {
+  .profile img {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 .profile__comparision {
@@ -777,28 +801,28 @@ p {
   text-align: left;
 }
 
-.tool__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.tool img {
-  width: 30%;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  margin-right: 50px;
-}
-
-.tool__content {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+@media (min-width: 64em) {
+  .tool__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tool img {
+    width: 30%;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-right: 50px;
+  }
+  .tool__content {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
 }
 
 .skill h2,

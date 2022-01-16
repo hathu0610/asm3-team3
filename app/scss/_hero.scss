@@ -23,6 +23,8 @@
 
   &__image {
     min-height: 10rem;
+    margin-left: -125% !important;
+
     @include breakpoint-up(large) {
       flex: 1;
       order: 1;
