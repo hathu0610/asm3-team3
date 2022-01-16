@@ -12,6 +12,17 @@ html {
           box-sizing: inherit;
 }
 
+.float-container {
+  padding: 20px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 0px;
+}  
+
+
 body {
   margin: 0;
   padding: 0;
