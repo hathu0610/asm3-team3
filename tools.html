@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  <link rel ="stylesheet" href="./app/scss/style.css" >
+    <link rel ="stylesheet" href="/app/scss/style.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Assignment 3</title>
+</head>
+<body data-aos="fade-left"  class="subprofile container container--pall tools" >
+<span class="material-icons" onclick="javascript:window.location.href='./' ">arrow_back</span> 
+    <h1>Tools</h1>
+    <h2>What we have done</h2>
+    <h3>Our group’s website:</h3> 
+    <div class="tools__box"><img class="tools__image" src="images/website.png"/>    </div>
+    <div>The link to our group’s website: <span><a href="https://hathu0610.github.io/asm3-team3/">https://hathu0610.github.io/asm3-team3/</a></span></div>
+    <div>The link to our group’s Git repository (GitHub, BitBucket, etc.): <span><a href="https://hathu0610.github.io/asm3-team3/">https://hathu0610.github.io/asm3-team3/</a></span></div>
+    <br>
+    <h3>Our product:</h3>
+    <div class="tools__box"><img class="tools__image" src="images/botto.png"/></div> 
+    <div>The link to Botto website: <span><a href="https://hathu0610.github.io/asm3-team3/">https://hathu0610.github.io/asm3-botto/</a></span></div>
+    <div>The link to Botto Chatbot’s Git repository: <span><a href="https://hathu0610.github.io/asm3-team3/">https://github.com/nnhoang215/Botto_chatbot </a></span></div>
+
+    <br>
+    <p>For the group’s website, we have two members participating in the process: Hoang and Thu since Hoang Anh and Kien are mainly in charge of the business side and the final report. Moreover, as this assignment requires detailed description and research about the chatbot, our team members Hoang and Kien spent more time building the chatbot in order for us to have a clearer vision of the project. So far we have finished building the group’s website, by creating the git repository, deploying to the github pages, updating the style (CSS) with interaction (JS) and updating our contents. Since we already have experience building the assignment 2, we found it easy to work with git and set up the initial frame of the website. Despite that, there are some problems we encountered during assignment 3. The problems will be discussed further as we describe more detail about the audit trails.
+    </p>
+    <hr>
+    <h2>Comment on audit trails</h2>
+
+    <p>Looking at the audit trails, we can see that our team members have commit codes on time with clear commit messages. The audit trails also partially reflected our group’s work, due to the fact that most of the time we worked on Google Docs and discussed our problems online. The two most prominent problems that were reflected on the trails are the subpage set up and the animation. Instead of putting all the content in one page like assignment 2, for this assignment we decided to split our content into multiple subpages. This resulted in a conflict when setting up the navigation between the webpage. Normally in web development, if you want to add a link that navigates the user from the subpage back to the main page, you would put the href of the main page as “/”, since this is the main page’s url. However, in github pages, the main page’s url is “[username].github.io/[projectname]”, and when you add the href as “/”, this will navigate to the url “[username].github.io/”. This took a long time for us to resolve, due to the fact that most of the answers online suggested that we used the href as “/[projectname]” or “/index.html”. In the end, it turned out that we have to use the href as “./”. This can be clearly shown in the audit trails, as we had to try a few different ways before finding out the right answers. Another problem we encountered that was reflected in the audit trails was with the animation. For assignment 3, we also wanted to learn more about CSS, as thus we decided to add more animation to the content of the website. Setting up the animation was very difficult, since we have to deal with the CSS keyframe and position. For example, in order to have an element fading out in 5 seconds, one would have to set a keyframe to change the element’s opacity and add the 5-second timer in webkit-animation. We encountered some conflict with the webkit-animation, and fortunately in the end we found an easy-to-use CSS animation library called AOS - animate on scroll. This situation was not clearly shown in the audit trails because we add the animation while also updating the content for the timeframe. Overall, the audit trails reflect that we were able to gain new knowledge about web programming from assignment 2 - including creating subpages and adding animation.
+</p>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+
+</html>

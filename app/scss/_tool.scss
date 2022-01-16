@@ -1,5 +1,17 @@
 .tool {
-  text-align: right;
+  text-align: left;
+  &__box {
+    display: flex;
+    flex-direction: row;
+  }
+  img {
+    width: 30%;
+    flex: 2;
+    margin-right: 50px;
+  }
+  &__content {
+    flex: 2;
+  }
 }
 .skill,
 .tool {
